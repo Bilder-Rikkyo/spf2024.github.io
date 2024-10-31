@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="utf-8">
         <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+        <title>Bilder. SPF2024｜対馬海ゴミ　ゴミの量</title>
     </head>
 
     <body style="margin: 0; overflow: hidden;">
@@ -21,7 +23,7 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    src="assets/asset.gltf"
+                    src="./assets/amountofgarbage.gltf"
                 ></a-asset-item>
             </a-assets>
 
@@ -37,7 +39,7 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="0.21739130462951156 0.21739130462951156 0.21739130462951156"
+                    scale="1 1 1"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     class="clickable"
