@@ -1,8 +1,8 @@
 const createPlaces = ({ latitude, longitude }) => [
-    [-1, -1],
-    [-1,  1],
-    [1, -1],
-    [1,  1],
+  ['p1', -1, -1],
+  ['p2', -1,  1],
+  ['p3',  1, -1],
+  ['p4',  1,  1],
   ].map(([label,  cy,  cx]) => ({
     label,
     location: {
