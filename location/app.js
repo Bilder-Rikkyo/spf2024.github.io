@@ -14,14 +14,14 @@ const createPlaces = ({ latitude, longitude }) => [
   const models = [
     {
       url: '#animated-asset',
-      scale: ['1', '1', '1'],
+      scale: ['0.5', '0.5', '0.5'],
     },
   ];
   
-  const createEntity = ({ location: { latitude, longitude }, models, scale: [x, y, z] }) => {
+  const createEntity = ({ location: { latitude, longitude }, model, scale: [x, y, z] }) => {
     const $entity = document.createRange().createContextualFragment(`
       <a-entity
-        gltf-model="${models}"
+        gltf-model="${model}"
         scale="${x} ${y} ${z}"
         gps-entity-place="latitude: ${latitude}; longitude: ${longitude};"
       ></a-entity>
@@ -38,7 +38,7 @@ const createPlaces = ({ latitude, longitude }) => [
   const renderPlace = ({ location }) => {
     const $scene = document.querySelector('a-scene');
     const { url, scale } = models[0];
-    const $entity = createEntity({ location, models: url, scale });
+    const $entity = createEntity({ location, model: url, scale });
     $scene.appendChild($entity);
   };
   
@@ -62,4 +62,3 @@ const createPlaces = ({ latitude, longitude }) => [
   };
   
   window.onload = main;
-  
