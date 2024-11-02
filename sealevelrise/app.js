@@ -14,7 +14,7 @@ const createPlaces = ({ latitude, longitude }) => [
   const models = [
     {
       url: '#animated-asset',
-      scale: ['0.05', '0.05', '0.05'],
+      scale: ['0.2', '0.2', '0.2'],
     },
   ];
   
@@ -25,7 +25,8 @@ const createPlaces = ({ latitude, longitude }) => [
         scale="${x} ${y} ${z}"
         gps-entity-place="latitude: ${latitude}; longitude: ${longitude};"
         position="0 0 -3"
-        animation-mixer
+        animation-mixer="loop: repeat"
+        gesture-handler
       ></a-entity>
     `);
   
