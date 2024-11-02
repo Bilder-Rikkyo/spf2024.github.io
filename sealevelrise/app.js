@@ -24,7 +24,6 @@ const createPlaces = ({ latitude, longitude }) => [
         gltf-model="${model}"
         scale="${x} ${y} ${z}"
         gps-entity-place="latitude: ${latitude}; longitude: ${longitude};"
-        position="0 0 -3"
         animation-mixer="loop: repeat"
         gesture-handler
       ></a-entity>
