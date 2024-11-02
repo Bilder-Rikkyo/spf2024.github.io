@@ -14,7 +14,7 @@ const createPlaces = ({ latitude, longitude }) => [
   const models = [
     {
       url: '#animated-asset',
-      scale: ['1', '1', '1'],
+      scale: ['0.07', '0.07', '0.07'],
     },
   ];
   
